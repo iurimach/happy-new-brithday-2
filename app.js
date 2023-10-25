@@ -1,5 +1,5 @@
 
-let countdown = 5;
+let countdown = 7;
 let countdownInterval;
 
 const timerDisplay = document.getElementById('timer');
@@ -14,13 +14,13 @@ function startCountdown() {
     countdownInterval = setInterval(function () {
         countdown--;
         updateTimerDisplay();
-        if (countdown === 3) {
+        if (countdown === 6) {
             const audio = document.getElementById('myAudio');
             audio.play();
         }
         if (countdown === 0) {
             clearInterval(countdownInterval);
-            timerDisplay.textContent = 'Let off the fireworks! heppy new yar';
+            timerDisplay.textContent = 'დაეოდე მუსიკაც იქნება';
             // Here, you can call a function to light fireworks or perform any other action.
             window.location.href = 'https://www.youtube.com/watch?v=QaR31V5xBQ8';
         }
